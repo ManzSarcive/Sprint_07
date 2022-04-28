@@ -13,11 +13,11 @@
 
     <div class="v-category-show">
         <div class="clearfix">
-            @if ($category->accepts_threads)
+            {{-- @if ($category->accepts_threads) --}}
                 @can ('createThreads', $category)
                     <a href="{{ Forum::route('thread.create', $category) }}" class="btn btn-primary float-end">{{ trans('forum::threads.new_thread') }}</a>
                 @endcan
-            @endif
+                {{-- @endif --}}
 
             <div class="btn-group" role="group">
                 @can ('manageCategories')
