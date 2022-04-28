@@ -24,5 +24,7 @@ return [
     'unlock' => 'Ouvrir',
     'unpin' => 'Détacher',
     'view' => 'Voir le sujet',
-
+    'recent' => 'Nouveau Thread',
+    'unread_updated' => 'Thread non lus',
+    'select_all' => 'tous les posts',
 ];
