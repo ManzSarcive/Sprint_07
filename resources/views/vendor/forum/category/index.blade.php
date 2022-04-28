@@ -4,6 +4,11 @@
 @section ('content')
     <div class="d-flex flex-row justify-content-between mb-2">
         <h2 class="flex-grow-1">{{ trans('forum::general.index') }}</h2>
+            <button type="button" class="btn btn-primary" data-open-modal="create-category">
+                {{ trans('forum::categories.create') }}
+            </button>
+
+            @include ('forum::category.modals.create')
 
         {{-- @can ('createCategories') --}}
             <button type="button" class="btn btn-primary" data-open-modal="create-category">
